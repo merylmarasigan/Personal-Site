@@ -117,3 +117,7 @@ body{margin-top:20px;}
 .rounded-pill {
     border-radius: 50rem!important;
 }
+
+html {
+    scroll-padding-top: 80px; /* Adjust this to the height of your navbar */
+}

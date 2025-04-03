@@ -121,3 +121,41 @@ body{margin-top:20px;}
 html {
     scroll-padding-top: 60px; /* Adjust this to the height of your navbar */
 }
+
+.github-link{
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+.skills-description{
+    margin-top: 0.5rem;
+}
+
+
+.company-logo {
+    width: 100px;                 /* Adjust size of the logo */
+    height: auto;
+}
+
+.company{
+    margin-top: 15px;
+}
+
+.contact-icon{
+    width: 16px;
+    height: auto;
+}

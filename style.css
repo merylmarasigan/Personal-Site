@@ -1,11 +1,15 @@
 .profile-img{
     border-radius: 50%;
 }
+
 .python-icon{
     height: 220px;
 }
 
-body{margin-top:20px;}
+body{
+    margin-top: 20px;
+}
+
 .timeline-page:after {
     position: absolute;
     content: "";
@@ -17,6 +21,7 @@ body{margin-top:20px;}
     margin: auto;
     border-right: 2px dashed #dee2e6 !important;
 }
+
 .timeline-page .timeline-item .date-label-left:after,
 .timeline-page .timeline-item .date-label-left:before,
 .timeline-page .timeline-item .duration-right:after,
@@ -26,6 +31,7 @@ body{margin-top:20px;}
     border-radius: 50%;
     z-index: 1;
 }
+
 .timeline-page .timeline-item .date-label-left:after,
 .timeline-page .timeline-item .duration-right:after {
     top: 9px;
@@ -33,6 +39,7 @@ body{margin-top:20px;}
     height: 10px;
     background-color: gray;
 }
+
 .timeline-page .timeline-item .date-label-left:before,
 .timeline-page .timeline-item .duration-right:before {
     border: 2px dashed #dee2e6;
@@ -41,69 +48,50 @@ body{margin-top:20px;}
     height: 28px;
     background-color: #fff;
 }
+
 .timeline-page .timeline-item .date-label-left {
     float: right;
     margin-right: 24px;
 }
+
 .timeline-page .timeline-item .date-label-left:after {
     right: -41px;
 }
+
 .timeline-page .timeline-item .date-label-left:before {
     right: -50px;
 }
+
 .timeline-page .timeline-item .duration-right {
     float: left;
     margin-left: 24px;
 }
+
 .timeline-page .timeline-item .duration-right:after {
     left: -41px;
 }
+
 .timeline-page .timeline-item .duration-right:before {
     left: -50px;
 }
+
 .timeline-page .timeline-item .event {
     transition: all 0.2s ease;
 }
+
 .timeline-page .timeline-item .event .title {
     font-weight: 500;
     transition: all 0.2s ease;
 }
+
 .timeline-page .timeline-item .event.event-description-right {
     text-align: left;
     margin-left: 24px;
 }
+
 .timeline-page .timeline-item .event.event-description-left {
     text-align: right;
     margin-right: 24px;
-}
-@media (max-width: 575px) {
-    .timeline-page {
-        margin-left: 18px;
-    }
-    .timeline-page:after {
-        margin: 0;
-    }
-    .timeline-page .timeline-item .duration {
-        float: left !important;
-        margin-left: 30px !important;
-        margin-right: auto !important;
-        text-align: left !important;
-    }
-    .timeline-page .timeline-item .duration:after {
-        left: -34px !important;
-    }
-    .timeline-page .timeline-item .duration:before {
-        left: -42px !important;
-    }
-    .timeline-page .timeline-item .duration .event {
-        text-align: left !important;
-        margin-left: 15px;
-    }
-    .timeline-page .timeline-item .event.event-description-left,
-    .timeline-page .timeline-item .event.event-description-right {
-        text-align: left !important;
-        margin: 0 0 0 30px !important;
-    }
 }
 
 .timeline-page .timeline-item .date-label-left:after {
@@ -114,6 +102,7 @@ body{margin-top:20px;}
     height: 36px;
     width: 36px;
 }
+
 .rounded-pill {
     border-radius: 50rem!important;
 }
@@ -145,9 +134,8 @@ h2{
     margin-top: 0.5rem;
 }
 
-
 .company-logo {
-    width: 100px;                 /* Adjust size of the logo */
+    width: 100px; /* Adjust size of the logo */
     height: auto;
 }
 
@@ -158,4 +146,125 @@ h2{
 .contact-icon{
     width: 16px;
     height: auto;
+}
+
+/* carousel */
+.carousel-item {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    height: 250px; /* Adjust as needed */
+    padding-bottom: 80px; /* Add space to the bottom */
+}
+
+.carousel-item p {
+    max-width: 70%; /* Adjust this to fit the desired width */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 0 10px; /* Add padding to give space between text and the edges */
+    text-align: center; /* Center the text inside the paragraph */
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center; /* Center the indicators */
+    padding-left: 0; /* Remove default padding */
+}
+
+.carousel-indicators li {
+    background-color: transparent; /* Remove dot color */
+    border: 1px solid white; /* White border to form the line */
+    width: 20px; /* Width of the line */
+    height: 2px; /* Height of the line */
+    margin: 0 5px; /* Space between the lines */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.carousel-indicators .active {
+    height: 3px; /* Slightly thicker active line */
+}
+
+.carousel-indicators li::before {
+    content: none; /* Ensure no numbers appear */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    padding-left: 20px;  /* Space between the arrow and text on the left */
+    padding-right: 20px; /* Space between the arrow and text on the right */
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+/* Ensuring the paragraph text doesn't overlap with the indicators */
+.carousel-item p {
+    margin-bottom: 50px; /* Add margin to avoid text overlap */
+    z-index: 1; /* Keep text above carousel controls */
+    position: relative;
+    text-align: center; /* Center align the text */
+}
+
+a{
+    color: white;
+}
+
+@media (max-width: 575px) {
+    .timeline-page {
+        margin-left: 18px;
+    }
+
+    .timeline-page:after {
+        margin: 0;
+    }
+
+    .timeline-page .timeline-item .duration {
+        float: left !important;
+        margin-left: 30px !important;
+        margin-right: auto !important;
+        text-align: left !important;
+    }
+
+    .timeline-page .timeline-item .duration:after {
+        left: -34px !important;
+    }
+
+    .timeline-page .timeline-item .duration:before {
+        left: -42px !important;
+    }
+
+    .timeline-page .timeline-item .duration .event {
+        text-align: left !important;
+        margin-left: 15px;
+    }
+
+    .timeline-page .timeline-item .event.event-description-left,
+    .timeline-page .timeline-item .event.event-description-right {
+        text-align: left !important;
+        margin: 0 0 0 30px !important;
+    }
+
+    .carousel-item {
+        padding-bottom: 325px; /* Adjust bottom space for smaller screens */
+    }
+
+    .carousel-item p {
+        padding-bottom: 30px; /* Adjust bottom padding for the paragraph */
+    }
 }

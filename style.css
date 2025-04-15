@@ -145,6 +145,11 @@ html {
     height: auto;
 }
 
+.skill ul {
+    margin-left: 0; /* Remove any left margin */
+    padding-left: 0; /* Remove any left padding */
+  }
+
 /* carousel */
 .carousel-item {
     background-color: black;
